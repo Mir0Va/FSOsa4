@@ -7,3 +7,13 @@ content-type: application/json
   "url": "joku.com",
   "likes": 1
 }
+
+###
+PUT http://localhost:3003/api/blogs/6458bf2de609e510c0c095b8
+
+{
+  "title": "putteri",
+  "author": "Puttaaja",
+  "url": "eiole",
+  "likes": 4
+}
