@@ -1,19 +1,32 @@
-POST http://localhost:3003/api/blogs
+POST http://localhost:3003/api/users
 content-type: application/json
 
 {
-  "title": "teko",
-  "author": "Ropettaja",
-  "url": "joku.com",
-  "likes": 1
+  "username": "Mir0Va",
+  "name": "Miro",
+  "password": "salasana"
 }
 
 ###
-PUT http://localhost:3003/api/blogs/6458bf2de609e510c0c095b8
+DELETE  http://localhost:3003/api/blogs/645a131d68a75cca425e88d0
+Authorization: Bearer 
+
+###
+POST http://localhost:3003/api/blogs
+content-type: application/json
+Authorization: Bearer
 
 {
-  "title": "putteri",
-  "author": "Puttaaja",
-  "url": "eiole",
-  "likes": 4
+  "title": "testing",
+  "author": "Mir",
+  "url": "no"
+}
+
+###
+POST http://localhost:3003/api/login
+content-type: application/json
+
+{
+  "username": "Mir0Va",
+  "password": "salasana"
 }
